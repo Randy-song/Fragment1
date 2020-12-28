@@ -1,25 +1,27 @@
-package cn.edu.fragment.city
+package cn.edu.fragment.fragments
 
 import android.content.Intent
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import cn.edu.fragment.R
+import cn.edu.fragment.city.City
+import cn.edu.fragment.city.Main2Activity
+import cn.edu.fragment.model.WeatherViewModel
 import kotlinx.android.synthetic.main.activity_main2.*
 
-
-class CityFragment : Fragment() {
+class WeacherFragment : Fragment() {
 
     companion object {
-        fun newInstance() = CityFragment()
+        fun newInstance() = WeacherFragment()
     }
 
-    private lateinit var viewModel: CityViewModel
+    private lateinit var viewModel: WeatherViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,7 +33,7 @@ class CityFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        viewModel = ViewModelProviders.of(this).get(CityViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(WeatherViewModel::class.java)
 
         viewModel.cities.observe(viewLifecycleOwner, Observer {
             val cities = it

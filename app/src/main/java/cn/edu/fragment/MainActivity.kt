@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import cn.edu.fragment.city.CityFragment
+import cn.edu.fragment.fragments.WeacherFragment
 import cn.edu.fragment.fragments.GameFragment
 import cn.edu.fragment.fragments.HelloFragment
 import cn.edu.fragment.fragments.TimerFragment
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             replaceFragment(TimerFragment())
         }
         btnWeather.setOnClickListener {
-            replaceFragment(CityFragment())
+            replaceFragment(WeacherFragment())
         }
     }
 

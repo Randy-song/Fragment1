@@ -1,18 +1,18 @@
-package cn.edu.fragment.city
+package cn.edu.fragment.model
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import cn.edu.fragment.R
+import cn.edu.fragment.city.City
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.BufferedReader
 import java.io.InputStreamReader
 import kotlin.concurrent.thread
 
-class CityViewModel(application: Application): AndroidViewModel(application) {
+class WeatherViewModel(application: Application): AndroidViewModel(application) {
     private val _cities: MutableLiveData<List<City>> = MutableLiveData()
     val cities: LiveData<List<City>> = _cities
 
