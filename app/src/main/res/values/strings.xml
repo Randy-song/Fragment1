@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">2018110437宋奕霖</string>
+    <string name="reset">reset</string>
+    <string name="sd">%s%d</string>
+    <string name="score">Score:</string>
+    <string name="click">点我</string>
+    <string name="helloworld">hello,friend</string>
+    <string name="photo">Hello</string>
+    <string name="list">翻牌</string>
+    <string name="music">计时</string>
+    <string name="weather">天气</string>
+    <string name="timer">00:00:00</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="restart">restart</string>
+    <string name="time">%02d:%02d:%02d</string>
+    <string name="textview">textView</string>
+</resources>
